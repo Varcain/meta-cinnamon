@@ -1,0 +1,11 @@
+--- a/configure.ac~	2016-09-27 16:04:45.543338057 +0200
++++ b/configure.ac	2016-09-27 16:05:09.962132148 +0200
+@@ -111,7 +111,7 @@
+   AC_DEFINE([ENABLE_GTK],[1],[Define if you want to build with GTK+ support])
+ ])
+ 
+-GI_DATADIR=$($PKG_CONFIG --variable=gidatadir gobject-introspection-1.0)
++GI_DATADIR=$PKG_CONFIG_SYSROOT_DIR$($PKG_CONFIG --variable=gidatadir gobject-introspection-1.0)
+ AC_SUBST(GI_DATADIR)
+ 
+ # readline

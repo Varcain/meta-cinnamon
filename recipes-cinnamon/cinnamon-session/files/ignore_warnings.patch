@@ -1,0 +1,24 @@
+--- a/cinnamon-session/csm-logout-dialog.c	2016-09-27 20:46:46.090097000 +0200
++++ b/cinnamon-session/csm-logout-dialog.c	2016-09-27 20:49:43.438369299 +0200
+@@ -302,15 +302,19 @@
+         gdouble delay;
+ 
+         delay = (gdouble)logout_dialog->priv->delay;
++#pragma GCC diagnostic push
++#pragma GCC diagnostic ignored "-Wformat-nonliteral"
+         seconds_warning = g_strdup_printf (seconds_warning, logout_dialog->priv->timeout);
+-        
++#pragma GCC diagnostic pop
+         gtk_progress_bar_set_fraction (GTK_PROGRESS_BAR (logout_dialog->priv->progressbar), logout_dialog->priv->timeout / delay);
+         gtk_progress_bar_set_show_text( GTK_PROGRESS_BAR(logout_dialog->priv->progressbar), TRUE );
+         gtk_progress_bar_set_text (GTK_PROGRESS_BAR (logout_dialog->priv->progressbar), seconds_warning);
+-        
++#pragma GCC diagnostic push
++#pragma GCC diagnostic ignored "-Wformat-nonliteral"
+         gtk_message_dialog_format_secondary_text (GTK_MESSAGE_DIALOG (logout_dialog),
+                                                   secondary_text,
+                                                   NULL);
++#pragma GCC diagnostic pop
+ 
+         logout_dialog->priv->timeout--;
+ 

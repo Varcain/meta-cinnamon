@@ -1,0 +1,15 @@
+Layer name:          meta-cinnamon
+Layer purpose:       Support Cinnamon desktop in OpenEmbedded
+Layer status:        Work in progress / not usable yet
+Layer dependencies:  TBD
+Layer license:       MIT license (see COPYING.MIT)
+
+Layer maintainer:
+Kamil Lulko <kamil.lulko@gmail.com>
+
+TODO:
+- x86: Cinnamon crashing due do some gtk icons problem
+- ARM: Cinnamon crashing due to some mozjs problem
+- Unexported SHELL envvar problem with virtualenv python
+- Have to patch hack in Python for sys.lib, how to fix that properly?
+- Old perl workaround for milestone.pl

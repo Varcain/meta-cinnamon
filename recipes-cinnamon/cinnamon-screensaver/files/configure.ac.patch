@@ -1,0 +1,11 @@
+--- cinnamon-screensaver-3.0.1/configure.ac	2016-10-05 20:39:40.451944073 +0200
++++ cinnamon-screensaver-3.0.1/configure.ac	2016-10-05 20:39:46.379656478 +0200
+@@ -87,8 +87,6 @@
+ 
+ AC_PATH_PROG(GLIB_GENMARSHAL, glib-genmarshal)
+ 
+-GNOME_COMPILE_WARNINGS(yes)
+-
+ # Optional dependencies for the theme engines
+ 
+ SAVER_MODULES="gthread-2.0 gtk+-3.0 >= $GTK_REQUIRED_VERSION"

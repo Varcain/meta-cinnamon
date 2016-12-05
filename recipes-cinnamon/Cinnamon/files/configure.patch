@@ -1,0 +1,11 @@
+--- a/configure.ac~	2016-09-24 22:45:46.517902156 +0200
++++ b/configure.ac	2016-09-24 22:45:59.585253176 +0200
+@@ -4,7 +4,7 @@
+ AC_CONFIG_HEADERS([config.h])
+ AC_CONFIG_SRCDIR([src/cinnamon-global.c])
+ AC_CONFIG_MACRO_DIR([m4])
+-AC_CONFIG_AUX_DIR([config])
++AC_CONFIG_AUX_DIR([.])
+ 
+ AC_SUBST([PACKAGE_NAME], ["$PACKAGE_NAME"])
+ AC_SUBST([PACKAGE_VERSION], ["$PACKAGE_VERSION"])

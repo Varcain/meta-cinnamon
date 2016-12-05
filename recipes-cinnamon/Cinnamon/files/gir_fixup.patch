@@ -1,0 +1,13 @@
+--- Cinnamon-3.0.7/configure.ac	2016-10-03 20:29:37.587162719 +0200
++++ Cinnamon-3.0.7/configure.ac	2016-10-03 20:30:46.391952057 +0200
+@@ -125,8 +125,8 @@
+ 	 AC_SUBST([HAVE_BLUETOOTH],[0])
+ 	 AC_MSG_RESULT([no])])
+ 
+-MUFFIN_GIR_DIR=`$PKG_CONFIG --variable=girdir libmuffin`
+-MUFFIN_TYPELIB_DIR=`$PKG_CONFIG --variable=typelibdir libmuffin`
++MUFFIN_GIR_DIR=$PKG_CONFIG_SYSROOT_DIR`$PKG_CONFIG --variable=girdir libmuffin`
++MUFFIN_TYPELIB_DIR=$PKG_CONFIG_SYSROOT_DIR`$PKG_CONFIG --variable=typelibdir libmuffin`
+ AC_SUBST(MUFFIN_GIR_DIR)
+ AC_SUBST(MUFFIN_TYPELIB_DIR)
+ 

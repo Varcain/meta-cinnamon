@@ -1,0 +1,11 @@
+--- nemo-3.0.6/src/Makefile.am~	2016-10-05 21:47:43.284102678 +0200
++++ nemo-3.0.6/src/Makefile.am	2016-10-05 21:47:50.991729382 +0200
+@@ -15,7 +15,7 @@
+ AM_CPPFLAGS =							\
+ 	-I$(top_srcdir) 					\
+ 	-I$(top_srcdir)/cut-n-paste-code			\
+-	-I$(top_builddir)/libnemo-private 			\
++	-I$(top_srcdir)/libnemo-private 			\
+ 	$(BASE_CFLAGS) 						\
+ 	$(COMMON_CFLAGS)					\
+ 	$(NEMO_CFLAGS)					\

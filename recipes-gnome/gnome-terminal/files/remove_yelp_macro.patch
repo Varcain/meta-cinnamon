@@ -1,0 +1,11 @@
+--- gnome-terminal-3.20.2/configure.ac~	2016-10-06 14:57:12.066057063 +0200
++++ gnome-terminal-3.20.2/configure.ac	2016-10-06 14:57:30.357162887 +0200
+@@ -360,8 +360,6 @@
+ # Documentation
+ # *************
+ 
+-YELP_HELP_INIT([no-lc-media-links no-lc-dist])
+-
+ # ****************************
+ 
+ AC_SUBST([TERMINAL_MAJOR_VERSION],[gt_version_major])

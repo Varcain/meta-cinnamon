@@ -1,0 +1,8 @@
+--- src/js.pc.in~	2016-09-27 15:21:24.572122068 +0200
++++ src/js.pc.in	2016-09-27 15:21:51.370774613 +0200
+@@ -8,4 +8,4 @@
+ Version: @MOZILLA_VERSION@
+ Requires.private: @NSPR_PKGCONF_CHECK@
+ Libs: -L${libdir} -l@LIBRARY_NAME@
+-Cflags: -include ${includedir}/@LIBRARY_NAME@/js/RequiredDefines.h -I${includedir}/@LIBRARY_NAME@
++Cflags: -I${includedir}/@LIBRARY_NAME@

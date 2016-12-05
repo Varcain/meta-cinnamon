@@ -1,0 +1,8 @@
+--- ./src/cinnamon-extension-tool.in~	2016-10-03 23:03:36.090368977 +0200
++++ ./src/cinnamon-extension-tool.in	2016-10-03 23:04:17.780400443 +0200
+@@ -1,4 +1,4 @@
+-#!@PYTHON@
++#! /usr/bin/python
+ # -*- mode: Python; indent-tabs-mode: nil; -*-
+ 
+ import os

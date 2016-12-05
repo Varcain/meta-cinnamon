@@ -1,0 +1,15 @@
+--- Python-2.7.12.orig/Lib/distutils/command/install.py	2016-10-02 00:11:09.899094199 +0200
++++ Python-2.7.12/Lib/distutils/command/install.py	2016-10-02 00:12:03.632459815 +0200
+@@ -21,8 +21,10 @@
+ from site import USER_BASE
+ from site import USER_SITE
+ 
+-
+-libname = sys.lib
++if hasattr(sys, 'lib'):
++    libname = sys.lib
++else:
++    libname = 'lib'
+ 
+ if sys.version < "2.2":
+     WINDOWS_SCHEME = {
