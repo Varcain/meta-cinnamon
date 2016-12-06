@@ -47,8 +47,7 @@ do_install_class-native () {
     install -m 755 client/.libs/lt-cd-create-profile ${D}${bindir}/colord-${PV}/client/.libs/lt-cd-create-profile
 }
 
-PACKAGES =+ "libcolord"
-FILES_libcolord = " \
+FILES_${PN} += " \
     ${base_libdir}/systemd/* \
     ${libdir}/systemd/* \
     ${libdir}/tmpfiles.d/* \

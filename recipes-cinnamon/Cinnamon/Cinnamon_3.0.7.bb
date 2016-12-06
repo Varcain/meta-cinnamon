@@ -3,7 +3,7 @@ SECTION = "x11"
 LICENSE = "GPLv2"
 LIC_FILES_CHKSUM = "file://COPYING;md5=0159e10ccad3751f827b6741af79417b"
 DEPENDS = "muffin cjs cinnamon-menus startup-notification libsoup-2.4 networkmanager libgnome-keyring libcroco gdk-pixbuf pixman"
-RDEPENDS_Cinnamon = "python adwaita-icon-theme"
+RDEPENDS_Cinnamon = "python"
 RCONFLICTS_${PN} = "matchbox-common mini-x-session matchbox-session"
 
 inherit cinnamon autotools gettext gtk-doc pkgconfig gobject-introspection
@@ -29,9 +29,7 @@ do_compile_prepend() {
   cp -r ${S}/files/usr ${S}/files/etc ${B}/files
 }
 
-PACKAGES += "Cinnamon-data"
-
-FILES_Cinnamon-data = " \
+FILES_${PN} += " \
     ${libdir}/cinnamon/* \
     ${datadir}/icons/* \
     ${datadir}/cinnamon/* \

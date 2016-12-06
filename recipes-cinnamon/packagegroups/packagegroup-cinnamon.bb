@@ -10,27 +10,19 @@ inherit packagegroup
 RDEPENDS_${PN} = " \
     consolekit \
     cinnamon-desktop \
-    libcinnamon-desktop \
     cinnamon-menus \
     cinnamon-session \
-    libcinnamon-session \
     muffin \
-    muffin-glib \
     cinnamon-settings-daemon \
-    libcinnamon-settings \
     Cinnamon \
-    Cinnamon-data \
     nemo \
-    nemo-data \
     cinnamon-screensaver \
-    cinnamon-screensaver-data \
     network-manager-applet \
     xdg-utils \
     python-codecs \
     python-textutils \
     python-importlib \
     caribou \
-    libcaribou \
     procps \
     gnome-terminal \
     gdb \

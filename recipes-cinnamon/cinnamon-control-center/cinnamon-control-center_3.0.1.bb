@@ -1,5 +1,5 @@
 SUMMARY = "Cinnamon Control Center"
-SECTION = "x11/libs"
+SECTION = "x11"
 LICENSE = "GPLv2"
 LIC_FILES_CHKSUM = "file://COPYING;md5=75859989545e37968a99b631ef42722e"
 DEPENDS = ""

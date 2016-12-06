@@ -1,5 +1,5 @@
 SUMMARY = "Cinnamon Session"
-SECTION = "x11/libs"
+SECTION = "x11"
 LICENSE = "GPLv2"
 LIC_FILES_CHKSUM = "file://COPYING;md5=b234ee4d69f5fce4486a80fdaf4a4263"
 DEPENDS = "virtual/libx11 libcanberra"
@@ -15,5 +15,7 @@ ALTERNATIVE_${PN} = "x-session-manager"
 ALTERNATIVE_TARGET[x-session-manager] = "${bindir}/cinnamon-session"
 ALTERNATIVE_PRIORITY_${PN} = "100"
 
-PACKAGES =+ "libcinnamon-session"
-FILES_libcinnamon-session = "${datadir}/glib-2.0/* ${datadir}/icons/*"
+FILES_${PN} += " \
+    ${datadir}/glib-2.0/* \
+    ${datadir}/icons/* \
+"

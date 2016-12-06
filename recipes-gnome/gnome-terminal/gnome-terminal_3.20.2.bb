@@ -14,12 +14,8 @@ EXTRA_OECONF += "--disable-search-provider --without-nautilus-extension"
 
 RRECOMMENDS_${PN} += "gnome-common-schemas"
 
-PACKAGES += "${PN}-data"
-
-FILES_${PN}-data = " \
+FILES_${PN} += " \
     ${libdir}/systemd/user/* \
     ${datadir}/dbus-1/* \
     ${datadir}/appdata/* \
 "
-
-RDEPENDS_${PN} = "${PN}-data"

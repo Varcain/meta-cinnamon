@@ -13,8 +13,6 @@ SRC_URI[sha256sum] = "de32ab1852b605835ea0ca41f248d18b32d7805d479eb6fd5877d4de92
 
 EXTRA_OECONF = "--includedir=${STAGING_INCDIR} --libdir=${STAGING_LIBDIR}"
 
-PACKAGES += "cinnamon-screensaver-data"
-
-FILES_cinnamon-screensaver-data = " \
+FILES_${PN} += " \
     ${datadir}/dbus-1/* \
 "

@@ -1,5 +1,5 @@
 SUMMARY = "Muffin"
-SECTION = "x11/libs"
+SECTION = "x11"
 LICENSE = "GPLv2"
 LIC_FILES_CHKSUM = "file://COPYING;md5=8955bdc698cdc995fb6abba2cb6f7347"
 DEPENDS = "virtual/libx11 gtk+3 cinnamon-desktop zenity clutter-1.0 cogl-1.0 gnome-doc-utils startup-notification libcanberra xcb-util libxinerama"
@@ -27,5 +27,6 @@ ALTERNATIVE_${PN} = "x-window-manager"
 ALTERNATIVE_TARGET[x-window-manager] = "${bindir}/muffin"
 ALTERNATIVE_PRIORITY[x-window-manager] = "30"
 
-PACKAGES += "muffin-glib"
-FILES_muffin-glib = "${datadir}/glib-2.0/*"
+FILES_${PN} += " \
+    ${datadir}/glib-2.0/* \
+"

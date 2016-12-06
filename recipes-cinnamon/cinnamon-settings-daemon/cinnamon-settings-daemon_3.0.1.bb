@@ -10,8 +10,7 @@ SRC_URI[sha256sum] = "0abe839e04a36a052bb486f90e84c25ae6ccc92b74223813d9666eaac2
 
 EXTRA_OECONF = "--disable-cups --disable-man"
 
-PACKAGES =+ "libcinnamon-settings"
-FILES_libcinnamon-settings = " \
+FILES_${PN} += " \
     ${libdir}/cinnamon-settings-daemon-3.0/* \
     ${datadir}/icons/* \
     ${datadir}/dbus-1/* \

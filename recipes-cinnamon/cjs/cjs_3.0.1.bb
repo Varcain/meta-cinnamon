@@ -13,4 +13,3 @@ SRC_URI += " \
 SRC_URI[md5sum] = "884bc8e2739a086546b2cdc45e7fdad1"
 SRC_URI[sha256sum] = "cafda5a8a21421e93720732debeea08c59e63c058d240ab0f7b3a6969654864f"
 
-INSANE_SKIP_cjs += "dev-deps"

@@ -15,9 +15,7 @@ EXTRA_OECONF = "--disable-update-mimedb"
 
 RRECOMMENDS_${PN} = "shared-mime-info"
 
-PACKAGES += "nemo-data"
-
-FILES_nemo-data += " \
+FILES_${PN} += " \
     ${datadir}/icons/* \
     ${datadir}/dbus-1 \
     ${datadir}/mime/* \
